@@ -15,20 +15,25 @@
       <div class="user-input">
         <div class="bill">
           <p>Bill</p>
-          <input type="number" class="bill-input"/>
+          <!-- <i><img src="images/icon-dollar.svg" alt=""></i> -->
+          <input type="number" id="bill-input" />
         </div>
         <div class="tip">
           <p>Select Tip %</p>
-          <button>5%</button>
-          <button>10%</button>
-          <button>15%</button>
-          <button>25%</button>
-          <button>50%</button>
-          <input type="number" class="custom-tip" placeholder="Custom" />
+          <div>
+            <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+          </div>
+          <div>
+            <button>25%</button>
+            <button>50%</button>
+            <input type="number" id="custom-tip" placeholder="Custom" />
+          </div>
         </div>
         <div class="people">
           <p>Number of People</p>
-          <input type="number" class="totalPeople" />
+          <input type="number" id="total-people" />
         </div>
       </div>
       <div class="calculations">
@@ -44,5 +49,5 @@
       </div>
     </div>
   </body>
-  <script src="scipt.js"></script>
+  <script src="script.js"></script>
 </html>
