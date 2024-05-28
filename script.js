@@ -41,3 +41,13 @@ function add(bill) {
 }
 
 console.log(add);
+
+// Listen for and store number of people
+let people = 0;
+
+const numberOfPeople = document.getElementById("total-people");
+
+numberOfPeople.addEventListener("change", function (event) {
+  people = event.target.value;
+  console.log(add(userInput / people));
+});
