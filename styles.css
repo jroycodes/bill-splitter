@@ -1,0 +1,51 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+} */
+
+body{
+    background-color: hsl(185, 41%, 84%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .parent_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: orangered;
+} */
+
+/* .tip{
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-tip{
+    background-color: yellow;
+}
+
+.calculations{
+    background-color: green;
+} */
+/* .bill {
+    position: relative;
+    width: max-content;
+    text-align: left;
+}
+
+.bill-input{
+    text-align: right;
+    padding: 0.35rem 1.5rem;
+}
+.bill i {
+    position: absolute;
+    top: 80%;
+    left: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+} */
