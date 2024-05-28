@@ -40,8 +40,6 @@ function add(bill) {
   return bill * (tipPercentage / 100);
 }
 
-console.log(add);
-
 // Listen for and store number of people
 let people = 0;
 
