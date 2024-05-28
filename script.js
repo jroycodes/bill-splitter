@@ -22,6 +22,12 @@ const divide = function (num1, num2) {
 divide();
 
 // 2. Calculate Tip Amount per person
+function tipPerPerson(percentage, numberOfPeople) {
+    let percent = parseFloat(percentage);
+    let number = parseFloat(numberOfPeople);
+
+    return (percent / 100) * numberOfPeople;
+}
 // Divide Bill by 100
 // Multiply the result by selected Tip percentage
 // Divide result by number of people
