@@ -33,11 +33,14 @@ const customTip = document.getElementById("custom-tip");
 customTip.addEventListener("change", function (event) {
   tipPercentage = parseFloat(event.target.value);
   console.log(tipPercentage);
-
 });
 
 function add(bill) {
-  return bill * (tipPercentage / 100);
+  if (defaultTip > 0) {
+    return bill * (defaultTip / 100);
+  } else {
+    return bill * (tipPercentage / 100);
+  }
 }
 
 // Listen for and store number of people
@@ -46,6 +49,18 @@ let people = 0;
 const numberOfPeople = document.getElementById("total-people");
 
 numberOfPeople.addEventListener("change", function (event) {
-  people = event.target.value;
+  people = parseFloat(event.target.value);
   console.log(add(userInput / people));
+});
+
+// Default tip functionality
+let defaultTip = 0;
+
+const selectedTip = document.querySelectorAll(".tips");
+
+selectedTip.forEach(function (tip) {
+  tip.addEventListener("click", function (event) {
+    defaultTip = parseFloat(event.target.textContent);
+    console.log(defaultTip);
+  });
 });
