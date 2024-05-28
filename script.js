@@ -24,3 +24,20 @@ const billInput = document.getElementById("bill-input");
 billInput.addEventListener("change", function (event) {
   userInput = parseFloat(event.target.value);
 });
+
+// Listen for and store tip percentage
+let tipPercentage = 0;
+
+const customTip = document.getElementById("custom-tip");
+
+customTip.addEventListener("change", function (event) {
+  tipPercentage = parseFloat(event.target.value);
+  console.log(tipPercentage);
+
+});
+
+function add(bill) {
+  return bill * (tipPercentage / 100);
+}
+
+console.log(add);
