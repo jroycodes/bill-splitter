@@ -16,7 +16,7 @@
         <div class="bill">
           <p>Bill</p>
           <i><img src="images/icon-dollar.svg" alt="" /></i>
-          <input type="number" id="bill-input" />
+          <input type="number" id="bill-input" placeholder="0" required />
         </div>
         <div class="tip">
           <p>Select Tip %</p>
@@ -32,19 +32,25 @@
         <div class="people">
           <p>Number of People</p>
           <i><img src="images/icon-person.svg" alt="" /></i>
-          <input type="number" id="total-people" />
+          <input type="number" id="total-people" placeholder="0" />
         </div>
       </div>
       <div class="calculations">
         <div class="tip-amount">
-          <p>Tip Amount / person</p>
+          <div>
+            <p>Tip Amount</p>
+            <p>/ person</p>
+          </div>
           <div id="amount1">$0.00</div>
         </div>
         <div class="total-person">
-          <p>Total / person</p>
+          <div>
+            <p>Total</p>
+            <p>/ person</p>
+          </div>
           <div id="amount2">$0.00</div>
         </div>
-        <button class="reset">Reset</button>
+        <button class="reset">RESET</button>
       </div>
     </div>
   </body>
