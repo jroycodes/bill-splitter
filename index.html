@@ -4,22 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>Tip Calculator</title>
   </head>
   <header>
-    <h5>SPLI</h5>
-    <h5>TTER</h5>
+    <h2>SPLI</h2>
+    <h2>TTER</h2>
   </header>
   <body>
     <div class="parent_container">
       <div class="user-input">
         <div class="bill">
-          <p>Bill</p>
+          <p id="opacity">Bill</p>
           <i><img src="images/icon-dollar.svg" alt="" /></i>
           <input type="number" id="bill-input" placeholder="0" required />
         </div>
         <div class="tip">
-          <p>Select Tip %</p>
+          <p id="opacity">Select Tip %</p>
           <div>
             <button class="tips">5%</button>
             <button class="tips">10%</button>
@@ -30,7 +36,7 @@
           </div>
         </div>
         <div class="people">
-          <p>Number of People</p>
+          <p id="opacity">Number of People</p>
           <i><img src="images/icon-person.svg" alt="" /></i>
           <input type="number" id="total-people" placeholder="0" />
         </div>
@@ -39,14 +45,14 @@
         <div class="tip-amount">
           <div>
             <p>Tip Amount</p>
-            <p>/ person</p>
+            <p id="per">/ person</p>
           </div>
           <div id="amount1">$0.00</div>
         </div>
         <div class="total-person">
           <div>
             <p>Total</p>
-            <p>/ person</p>
+            <p id="per">/ person</p>
           </div>
           <div id="amount2">$0.00</div>
         </div>
