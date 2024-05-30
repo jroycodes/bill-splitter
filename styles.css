@@ -10,6 +10,15 @@ header {
   justify-content: space-evenly;
   align-items: center;
   padding: 2rem;
+  letter-spacing: 0.5rem;
+  color: hsl(183, 100%, 15%);
+  opacity: 80%;
+}
+
+.tips {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
 }
 
 body {
@@ -17,6 +26,21 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+  background-color: hsl(185, 41%, 84%);
+}
+
+button,
+input {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+input {
+  color: hsl(183, 100%, 15%);
 }
 
 .parent_container {
@@ -27,6 +51,7 @@ body {
   gap: 2rem;
   max-width: 90%;
   border-radius: 1.6rem;
+  background-color: hsl(0, 0%, 100%);
 }
 
 .user-input {
@@ -49,9 +74,10 @@ body {
 #total-people {
   padding: 0.5rem 2rem;
   text-align: right;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   border: none;
-  max-width: 62%;
+  max-width: 76%;
+  background-color: hsl(189, 41%, 97%);
 }
 
 .bill,
@@ -84,19 +110,29 @@ body {
 } */
 
 .tips {
+  display: flex;
+  justify-content: center;
   padding: 0.5rem 4.2rem;
   width: 23%;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  border-radius: 0.3rem;
   border: none;
   text-align: center;
+  color: hsl(189, 41%, 97%);
+  background-color: hsl(183, 100%, 15%);
 }
 
 #custom-tip {
   padding: 0.5rem 1rem;
   text-align: center;
-  width: 23%;
+  width: 24%;
+  border-radius: 0.3rem;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
+}
+
+::placeholder {
+  color: hsl(186, 14%, 43%);
 }
 
 /* PEOPLE */
@@ -108,14 +144,24 @@ body {
   pointer-events: none;
 }
 
+#opacity {
+  color: hsl(186, 14%, 43%);
+  /* opacity: 70%; */
+}
+
 .calculations {
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  width: 18rem;
+  gap: 2rem;
+  width: 19rem;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 2rem;
+  background-color: hsl(183, 100%, 15%);
+}
+
+.calculations p {
+  color: hsl(0, 0%, 100%);
 }
 
 .tip-amount,
@@ -125,23 +171,31 @@ body {
 }
 
 .tip-amount {
-  gap: 8rem;
+  gap: 6.2rem;
 }
 
 .total-person {
-  gap: 9.7rem;
+  gap: 7.5rem;
+}
+
+#per {
+  color: hsl(184, 14%, 56%);
+  font-size: 0.9rem;
 }
 
 #amount1,
 #amount2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  color: hsl(172, 67%, 45%);
 }
 
 .reset {
-  padding: 0.5rem 7.5rem;
+  padding: 0.5rem 7rem;
   font-size: 1.2rem;
   border-radius: 0.2rem;
   border: none;
   text-align: center;
   margin-top: 2rem;
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
 }
