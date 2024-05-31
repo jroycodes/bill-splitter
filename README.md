@@ -5,7 +5,7 @@
 ## How it works 👋
 
 This project is a simple web application that helps you split a bill among a group of people. It calculates the total amount each person has to pay, including a tip, and provides real-time feedback on the inputs.
-   - https://jroycodes.github.io/tip-calculator/
+   - https://jroycodes.github.io/bill-splitter/
 ## Features
 
 1. Input Validation: Ensures that the bill amount and the number of people are greater than zero.
@@ -28,4 +28,4 @@ This project is a simple web application that helps you split a bill among a gro
    - The total amount per person will be displayed under "Total per person".
 4. Reset the Inputs: Click the "Reset" button to clear all inputs and results.
 
-## Check it out here : https://jroycodes.github.io/tip-calculator/
+## Check it out here : https://jroycodes.github.io/bill-splitter/
