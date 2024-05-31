@@ -20,10 +20,12 @@
 let userInput = 0;
 
 const billInput = document.getElementById("bill-input");
+
 const errorMessage = document.getElementById("error-message");
 
 billInput.addEventListener("input", function (event) {
   const inputValue = parseFloat(event.target.value);
+
   if (inputValue <= 0) {
     billInput.classList.add("error");
     errorMessage.style.display = "block";
@@ -57,21 +59,27 @@ function add(bill) {
 let people = 0;
 
 const numberOfPeople = document.getElementById("total-people");
+
 // target result div
 const result1Div = document.getElementById("amount1");
+
 const result2Div = document.getElementById("amount2");
 
 numberOfPeople.addEventListener("input", function (event) {
   people = parseFloat(event.target.value);
   console.log(people);
+
   // store total per person in tips
   const tips = userInput / people;
   console.log(tips);
+
   // run add function on tips
   const tipPerPerson = add(tips).toFixed(2);
+
   // add tip per person to total per person
   const totalPerPerson = (tips + parseFloat(tipPerPerson)).toFixed(2);
   console.log(totalPerPerson);
+
   //  display tip
   result1Div.textContent = tipPerPerson;
 
@@ -103,7 +111,7 @@ resetButton.addEventListener("click", function (event) {
   userInput = 0;
   people = 0;
 
-  // Remove error states 
+  // Remove error states
   billInput.classList.remove("error");
   numberOfPeople.classList.remove("error");
   errorMessage.style.display = "none";
