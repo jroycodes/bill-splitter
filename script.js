@@ -20,10 +20,19 @@
 let userInput = 0;
 
 const billInput = document.getElementById("bill-input");
+const errorMessage = document.getElementById("error-message");
 
-billInput.addEventListener("change", function (event) {
-  userInput = parseFloat(event.target.value);
-  console.log(userInput);
+billInput.addEventListener("input", function (event) {
+  const inputValue = parseFloat(event.target.value);
+  if (inputValue <= 0) {
+    billInput.classList.add("error");
+    errorMessage.style.display = "block";
+  } else {
+    billInput.classList.remove("error");
+    errorMessage.style.display = "none";
+    userInput = inputValue;
+    console.log(userInput);
+  }
 });
 
 // Listen for and store tip percentage
@@ -31,7 +40,7 @@ let tipPercentage = 0;
 
 const customTip = document.getElementById("custom-tip");
 
-customTip.addEventListener("change", function (event) {
+customTip.addEventListener("input", function (event) {
   tipPercentage = parseFloat(event.target.value);
   console.log(tipPercentage);
 });
@@ -52,27 +61,26 @@ const numberOfPeople = document.getElementById("total-people");
 const result1Div = document.getElementById("amount1");
 const result2Div = document.getElementById("amount2");
 
-numberOfPeople.addEventListener("change", function (event) {
+numberOfPeople.addEventListener("input", function (event) {
   people = parseFloat(event.target.value);
   console.log(people);
-  // store total per person in tips 
+  // store total per person in tips
   const tips = userInput / people;
   console.log(tips);
-  // run add function on tips 
+  // run add function on tips
   const tipPerPerson = add(tips).toFixed(2);
-  // add tip per person to total per person 
-    const totalPerPerson = parseFloat(tips) + parseFloat(tipPerPerson);
-    console.log(totalPerPerson);
+  // add tip per person to total per person
+  const totalPerPerson = (tips + parseFloat(tipPerPerson)).toFixed(2);
+  console.log(totalPerPerson);
   //  display tip
   result1Div.textContent = tipPerPerson;
 
-  // display total per person 
-  result2Div.textContent = totalPerPerson
-  
+  // display total per person
+  result2Div.textContent = totalPerPerson;
+
   console.log("Total per person : ", totalPerPerson);
   console.log("Tip per Person :", tipPerPerson);
 });
-
 
 // Default tip functionality
 let defaultTip = 0;
