@@ -226,7 +226,7 @@ input:focus {
   color: hsl(172, 67%, 45%);
 }
 
-.reset {
+#reset {
   padding: 0.5rem 7rem;
   font-size: 1.2rem;
   border-radius: 0.2rem;
@@ -237,6 +237,6 @@ input:focus {
   background-color: hsl(172, 67%, 45%);
 }
 
-.reset:hover {
+#reset:hover {
   background-color: hsl(189, 41%, 97%);
 }
