@@ -20,9 +20,14 @@
     <div class="parent_container">
       <div class="user-input">
         <div class="bill">
-          <p id="opacity">Bill</p>
+          <div class="errors">
+            <p id="opacity">Bill</p>
+            <div id="error-message" class="error-message">
+              Bill can't be less than or equal to 0
+            </div>
+          </div>
           <i><img src="images/icon-dollar.svg" alt="" /></i>
-          <input type="number" id="bill-input" placeholder="0" required />
+          <input type="number" id="bill-input" placeholder="0" />
         </div>
         <div class="tip">
           <p id="opacity">Select Tip %</p>
@@ -36,7 +41,12 @@
           </div>
         </div>
         <div class="people">
-          <p id="opacity">Number of People</p>
+          <div id="errors">
+            <p id="opacity">Number of People</p>
+            <div id="error-message" class="error-message">
+              Can't be zero
+            </div>
+          </div>
           <i><img src="images/icon-person.svg" alt="" /></i>
           <input type="number" id="total-people" placeholder="0" />
         </div>
