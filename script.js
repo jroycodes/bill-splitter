@@ -93,3 +93,22 @@ selectedTip.forEach(function (tip) {
     console.log("Default tip :", defaultTip);
   });
 });
+
+// Reset
+const resetButton = document.getElementById("reset");
+
+resetButton.addEventListener("click", function (event) {
+  billInput.value = "";
+  numberOfPeople.value = "";
+  userInput = 0;
+  people = 0;
+
+  // Remove error states 
+  billInput.classList.remove("error");
+  numberOfPeople.classList.remove("error");
+  errorMessage.style.display = "none";
+
+  // Clear the result displays
+  result1Div.textContent = "$0.00";
+  result2Div.textContent = "$0.00";
+});
