@@ -5,19 +5,19 @@
 ## How it works 👋
 
 This project is a simple web application that helps you split a bill among a group of people. It calculates the total amount each person has to pay, including a tip, and provides real-time feedback on the inputs.
-
+   - https://jroycodes.github.io/tip-calculator/
 ## Features
 
-Input Validation: Ensures that the bill amount and the number of people are greater than zero.
-Real-time Calculation: Updates the results as you type.
-Custom Error Handling: Displays error messages and highlights input fields with invalid values.
-Reset Functionality: Clears all inputs and results with a single click.
+1. Input Validation: Ensures that the bill amount and the number of people are greater than zero.
+2. Real-time Calculation: Updates the results as you type.
+3. Custom Error Handling: Displays error messages and highlights input fields with invalid values.
+4. Reset Functionality: Clears all inputs and results with a single click.
 
 ## Technologies I Used
 
-HTML: For the basic structure of the application.
-CSS: For styling the application and handling error states.
-JavaScript: For dynamic behavior, input validation, and calculations.
+1. HTML: For the basic structure of the application.
+2. CSS: For styling the application and handling error states.
+3. JavaScript: For dynamic behavior, input validation, and calculations.
 
 ## Usage
 
@@ -27,3 +27,5 @@ JavaScript: For dynamic behavior, input validation, and calculations.
    - The tip amount per person will be displayed under "Tip per person".
    - The total amount per person will be displayed under "Total per person".
 4. Reset the Inputs: Click the "Reset" button to clear all inputs and results.
+
+## Check it out here : https://jroycodes.github.io/tip-calculator/
