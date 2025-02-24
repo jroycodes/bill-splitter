@@ -33,7 +33,6 @@ billInput.addEventListener("input", function (event) {
     billInput.classList.remove("error");
     errorMessage.style.display = "none";
     userInput = inputValue;
-    console.log(userInput);
   }
 });
 
@@ -44,7 +43,6 @@ const customTip = document.getElementById("custom-tip");
 
 customTip.addEventListener("input", function (event) {
   tipPercentage = parseFloat(event.target.value);
-  console.log(tipPercentage);
 });
 
 function add(bill) {
@@ -67,27 +65,21 @@ const result2Div = document.getElementById("amount2");
 
 numberOfPeople.addEventListener("input", function (event) {
   people = parseFloat(event.target.value);
-  console.log(people);
 
   // store total per person in tips
   const tips = userInput / people;
-  console.log(tips);
 
   // run add function on tips
   const tipPerPerson = add(tips).toFixed(2);
 
   // add tip per person to total per person
   const totalPerPerson = (tips + parseFloat(tipPerPerson)).toFixed(2);
-  console.log(totalPerPerson);
 
   //  display tip
   result1Div.textContent = tipPerPerson;
 
   // display total per person
   result2Div.textContent = totalPerPerson;
-
-  console.log("Total per person : ", totalPerPerson);
-  console.log("Tip per Person :", tipPerPerson);
 });
 
 // Default tip functionality
@@ -98,7 +90,6 @@ const selectedTip = document.querySelectorAll(".tips");
 selectedTip.forEach(function (tip) {
   tip.addEventListener("click", function (event) {
     defaultTip = parseFloat(event.target.textContent);
-    console.log("Default tip :", defaultTip);
   });
 });
 
